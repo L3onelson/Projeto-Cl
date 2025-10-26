@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Teste de Plano</title>
+    <title>Lore of Games</title>
     <style>
       body {
         margin: 0;
@@ -10,50 +10,53 @@
         font-family: Arial, sans-serif;
       }
 
-      /* Fundo (atrás) */
+      /* Fundo */
       .fundo {
         width: 100%;
         height: 100vh;
-        background: #264653;
+        background: #264653; /* cor de fundo */
         position: fixed;
         top: 0;
         left: 0;
         z-index: 1;
       }
 
-      /* Primeiro plano (na frente) */
+      /* Caixa branca (primeiro plano) */
       .plano {
-        width: 1000px;
-        height: 2000px;
-        background: white;
+        width: 90%;        /* ocupa 90% da largura da tela */
+        height: 80vh;      /* ocupa 80% da altura da tela */
+        background: white; /* cor do primeiro plano */
         position: fixed;
-        bottom: 50px;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        transform: translate(-50%, -50%); /* centraliza */
+        border-radius: 25px;               /* cantos arredondados */
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* sombra */
         z-index: 10;
+        padding: 20px;
       }
 
-      /* Conteúdo acima de tudo */
+      /* Conteúdo acima do plano */
       h1, p, nav {
         position: relative;
         z-index: 11;
-        color: white;
+        color: #000;
         text-align: center;
       }
 
       h1 {
-        text-shadow: 2px 2px 5px black;
+        color: #264653;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
       }
 
       a {
-        color: white;
+        color: #264653;
         text-decoration: none;
+        font-weight: bold;
       }
 
       a:hover {
-        color: black;
+        color: #2a9d8f;
       }
 
       ul {
@@ -62,29 +65,33 @@
       }
 
       li {
-        margin-bottom: 6px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
 
   <body>
     <div class="fundo"></div>
-    <div class="plano"></div>
+    <div class="plano">
+      <h1>Lore Of Games</h1>
+      <p>
+        Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo.
+      </p>
+      <p>
+        Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos.
+      </p>
 
-    <h1>Lore Of Games</h1>
-    <p>Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo.</p>
-    <p>Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos.</p>
-
-    <nav>
-      <ul>
-        <li><a href="#">Minecraft</a></li>
-        <li><a href="#">GTA</a></li>
-        <li><a href="#">SuperCell</a></li>
-        <li><a href="#">FNAF</a></li>
-        <li><a href="#">The Last Of Us</a></li>
-        <li><a href="#">Mario</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Minecraft</a></li>
+          <li><a href="#">GTA</a></li>
+          <li><a href="#">SuperCell</a></li>
+          <li><a href="#">FNAF</a></li>
+          <li><a href="#">The Last Of Us</a></li>
+          <li><a href="#">Mario</a></li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
 
