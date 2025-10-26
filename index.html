@@ -1,73 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-   
-  <div class = "fundo"></div>
-  <div class = "plano"></div>
   <head>
     <meta charset="UTF-8" />
-    <title> Historias de jogos </title>
-     <style>   
-     h1 {
-  color: White; 
-  text-shadow: 2px 2px 5px black;
-}
-    a {
-      color: white; 
-      text-decoration: none;
-    }
-    a:hover {
-      color: black; 
-    }
-   
-    body{
-        background-color: white; 
-        overflow: hidden;
-      }
-      .fundo {
-      width: 100%;
-      height: 100vh;
-      background:  #264653;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1; 
+    <title>Historias de jogos</title>
+    <style>
+      h1 {
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        position: relative;
+        z-index: 11;
       }
 
-      .plano {
-      width: 200px;
-      position: absolute;
-      background: white;
-      bottom: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
+      a {
+        color: white;
+        text-decoration: none;
       }
-       
-     </style>
+
+      a:hover {
+        color: black;
+      }
+
+      body {
+        background-color: white;
+        overflow: hidden;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+   
+      .fundo {
+        width: 100%;
+        height: 100vh;
+        background: #264653;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; 
+      }
+
+  
+      .plano {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        background: white;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10; 
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      }
+
+      p, nav {
+        position: relative;
+        z-index: 11; 
+        color: white;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+    </style>
   </head>
 
   <body>
+  
+    <div class="fundo"></div>
+    <div class="plano"></div>
+
+   
     <h1>Lore Of Games</h1>
-    
-    <div class = "fundo"></div>
-    <div class = "plano"></div>
 
     <p>
-      Neste site você aprendera sobre as historias dos jogos mais famosos do mundo.
-    </p>   
-     <p>
-      Ao clicar em um destes links abaixo vocẽ sera redirecionado para uma pagina com as informações sobre os jogos.
-    </p>   
+      Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo.
+    </p>
+    <p>
+      Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos.
+    </p>
 
     <nav>
-  <ul>
-    <li><a href="Minecraft.html">Minecraft</a></li>
-    <li><a href="GTA.html">GTA</a></li>
-    <li><a href="SuperCell.html">SuperCell</a></li>
-    <li><a href="FNAF.html">FNAF</a></li>
-    <li><a href="TheLastOfUs.html">The Last Of Us</a></li>
-    <li><a href="Mario.html">Mario</a></li>
-  </ul>
-</nav>  
+      <ul>
+        <li><a href="Minecraft.html">Minecraft</a></li>
+        <li><a href="GTA.html">GTA</a></li>
+        <li><a href="SuperCell.html">SuperCell</a></li>
+        <li><a href="FNAF.html">FNAF</a></li>
+        <li><a href="TheLastOfUs.html">The Last Of Us</a></li>
+        <li><a href="Mario.html">Mario</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
