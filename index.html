@@ -4,17 +4,23 @@
   <meta charset="UTF-8">
   <title>Lore Of Games</title>
   <style>
-    body {
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background: #264653; /* Fundo azul escuro */
+      background: #264653; /* fundo azul escuro */
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
-    /* Caixa branca grande */
+    /* Caixa branca central */
     .plano {
       width: 90%;
       height: 80%;
@@ -36,14 +42,15 @@
     }
 
     p {
-      color: #264653; /* Azul escuro */
-      font-weight: bold;
+      color: #264653; /* azul escuro */
+      font-weight: bold; /* negrito */
       margin-bottom: 15px;
     }
 
     nav ul {
       list-style: none;
       padding: 0;
+      margin-top: 10px;
     }
 
     nav li {
