@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Lore Of Games</title>
+  <title>Histórias dos Jogos Mais Famosos</title>
   <style>
     body {
       margin: 0;
@@ -11,50 +11,46 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
-    /* Caixa branca grande */
-    .plano {
+    /* Caixa central */
+    .container {
       width: 90%;
-      height: 80%;
+      max-width: 1000px;
       background: white;
-      border-radius: 25px;
+      border-radius: 20px;
       box-shadow: 0 0 30px rgba(0,0,0,0.6);
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 40px;
       text-align: center;
     }
 
     h1 {
       color: #264653;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
       margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     }
 
     p {
-      color: #264653; /* azul escuro */
-      font-weight: bold; /* negrito */
-      margin-bottom: 15px;
+      color: #264653;
+      font-weight: bold;
+      margin-bottom: 25px;
     }
 
-    nav ul {
+    ul {
       list-style: none;
       padding: 0;
-      margin-top: 15px;
     }
 
-    nav li {
-      margin-bottom: 10px;
+    li {
+      margin-bottom: 15px;
     }
 
     a {
       color: #264653;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
     }
 
     a:hover {
@@ -64,21 +60,22 @@
 </head>
 <body>
 
-  <div class="plano">
+  <div class="container">
     <h1>Lore Of Games</h1>
-    <p>Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo</p>
-    <p>Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos</p>
+    <p>Descubra a história dos 10 jogos mais famosos do mundo!</p>
 
-    <nav>
-      <ul>
-        <li><a href="#">Minecraft</a></li>
-        <li><a href="#">GTA</a></li>
-        <li><a href="#">SuperCell</a></li>
-        <li><a href="#">FNAF</a></li>
-        <li><a href="#">The Last Of Us</a></li>
-        <li><a href="#">Mario</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="#">Minecraft</a></li>
+      <li><a href="#">GTA V</a></li>
+      <li><a href="#">Super Mario Bros</a></li>
+      <li><a href="#">The Legend of Zelda</a></li>
+      <li><a href="#">Fortnite</a></li>
+      <li><a href="#">FIFA</a></li>
+      <li><a href="#">Call of Duty</a></li>
+      <li><a href="#">Pokémon</a></li>
+      <li><a href="#">The Last of Us</a></li>
+      <li><a href="#">Valorant</a></li>
+    </ul>
   </div>
 
 </body>
