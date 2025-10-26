@@ -1,99 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Primeiro Plano Grande</title>
-    <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-        font-family: Arial, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8">
+  <title>Primeiro Plano Grande</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #264653;
+    }
 
-      /* Fundo */
-      .fundo {
-        width: 100%;
-        height: 100vh;
-        background: #264653;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
+    /* Caixa branca central */
+    .plano {
+      width: 90%;
+      height: 80vh;
+      background: white;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 25px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      z-index: 10;
+    }
 
-      /* Caixa branca (primeiro plano) */
-      .plano {
-        width: 90%;
-        height: 80vh;
-        background: white;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 25px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-        z-index: 10;
-        padding: 20px;
+    h1 {
+      color: #264653;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
 
-        /* CENTRALIZAÇÃO */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
+    p {
+      color: #264653;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
 
-      h1 {
-        color: #264653;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        margin-bottom: 20px;
-      }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
 
-      p {
-        color: #264653;
-        margin-bottom: 15px;
-        font-weight: bold;
-      }
+    nav li {
+      margin-bottom: 10px;
+    }
 
-      nav ul {
-        list-style: none;
-        padding: 0;
-      }
+    a {
+      color: #264653;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-      nav li {
-        margin-bottom: 10px;
-      }
+    a:hover {
+      color: #2a9d8f;
+    }
+  </style>
+</head>
+<body>
 
-      a {
-        color: #264653;
-        text-decoration: none;
-        font-weight: bold;
-      }
+  <div class="plano">
+    <h1>Lore Of Games</h1>
+    <p>Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo</p>
+    <p>Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos</p>
 
-      a:hover {
-        color: #2a9d8f;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="fundo"></div>
-    <div class="plano">
-      <h1>Lore Of Games</h1>
-      <p>Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo</p>
-      <p>Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos</p>
-
-      <nav>
-        <ul>
-          <li><a href="#">Minecraft</a></li>
-          <li><a href="#">GTA</a></li>
-          <li><a href="#">SuperCell</a></li>
-          <li><a href="#">FNAF</a></li>
-          <li><a href="#">The Last Of Us</a></li>
-          <li><a href="#">Mario</a></li>
-        </ul>
-      </nav>
-    </div>
-  </body>
-</html>
-
+    <nav>
+      <ul>
+        <li><a href="#">Minecraft</a></li>
+        <li><a href="#">GTA</a></li>
+        <li><a href="#">SuperCell</a></li>
+        <li><a href="#">FNAF</a></li>
+        <li><a href="#">The Last Of Us</a></li>
