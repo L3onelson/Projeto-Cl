@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Lore of Games</title>
+    <title>Primeiro Plano Grande</title>
     <style>
       body {
         margin: 0;
@@ -14,7 +14,7 @@
       .fundo {
         width: 100%;
         height: 100vh;
-        background: #264653; /* cor de fundo */
+        background: #264653;
         position: fixed;
         top: 0;
         left: 0;
@@ -23,35 +23,44 @@
 
       /* Caixa branca (primeiro plano) */
       .plano {
-        width: 90%;        /* ocupa 90% da largura da tela */
-        height: 80vh;      /* ocupa 80% da altura da tela */
-        background: white; /* cor do primeiro plano */
+        width: 90%;
+        height: 80vh;
+        background: white;
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* centraliza */
-        border-radius: 25px;               /* cantos arredondados */
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* sombra */
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
         z-index: 10;
         padding: 20px;
-      }
 
-      /* Conteúdo acima do plano */
-      h1, p, nav {
-        
-        position: relative;
-        z-index: 11;
-        color:#264653;
+        /* CENTRALIZAÇÃO */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
       }
 
       h1 {
         color: #264653;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
       }
+
       p {
-        color: #264653;
-       
+        color: #000;
+        margin-bottom: 15px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav li {
+        margin-bottom: 10px;
       }
 
       a {
@@ -63,15 +72,6 @@
       a:hover {
         color: #2a9d8f;
       }
-
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      li {
-        margin-bottom: 10px;
-      }
     </style>
   </head>
 
@@ -79,12 +79,8 @@
     <div class="fundo"></div>
     <div class="plano">
       <h1>Lore Of Games</h1>
-      <p>
-        Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo.
-      </p>
-      <p>
-        Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos.
-      </p>
+      <p><strong>Neste site você aprenderá sobre as histórias dos jogos mais famosos do mundo</strong></p>
+      <p><strong>Ao clicar em um destes links abaixo, você será redirecionado para uma página com as informações sobre os jogos</strong></p>
 
       <nav>
         <ul>
@@ -99,4 +95,3 @@
     </div>
   </body>
 </html>
-
